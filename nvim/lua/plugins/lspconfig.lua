@@ -84,6 +84,8 @@ return {
             enable_ms_build_load_projects_on_demand = true,
         })
 
+        -- Odin
+        require("lspconfig").ols.setup({})
         -- Lua
         require("lspconfig").lua_ls.setup({
             on_init = function(client)

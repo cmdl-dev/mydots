@@ -10,10 +10,10 @@ return {
     },
     opts = {
         shade_terminals = true,
-        direction = "vertical",
+        direction = "float",
         float_opts = {
             -- Hide border
-            border = "none",
+            border = "curved",
         },
     },
 }

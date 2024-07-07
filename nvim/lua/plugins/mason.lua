@@ -22,7 +22,7 @@ return {
             "prettier",
             "shfmt",
             "stylua",
-            "tailwindcss-language-server",
+            -- "tailwindcss-language-server",
             "taplo",
             "templ",
             "yaml-language-server",

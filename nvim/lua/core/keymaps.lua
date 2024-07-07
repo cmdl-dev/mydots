@@ -18,6 +18,7 @@ local map = function(modes, lhs, rhs, opts)
     end
 end
 
+map("i", "jk", "<esc>", {})
 -- better up/down
 map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
@@ -25,8 +26,8 @@ map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
 -- Move to window using the <ctrl> hjkl keys
 map("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
 map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
-map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
 map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
+map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
 
 -- Resize window using <ctrl> arrow keys
 map("n", "<C-Up>", ":resize +2<cr>", { desc = "Increase window height" })
@@ -82,6 +83,8 @@ map("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev search result
 map("n", "<leader>qq", ":qa<cr>", { desc = "Quit all" })
 
 -- windows
+map("n", "<leader>wa", ":wa<cr>", { desc = "Save all", remap = true })
+map("n", "<leader>ws", ":w<cr>", { desc = "Save", remap = true })
 map("n", "<leader>ww", "<C-W>p", { desc = "Other window", remap = true })
 map("n", "<leader>wd", "<C-W>c", { desc = "Delete window", remap = true })
 map("n", "<leader>w-", "<C-W>s", { desc = "Split window below", remap = true })

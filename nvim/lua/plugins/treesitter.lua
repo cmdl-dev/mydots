@@ -41,6 +41,7 @@ return {
             "regex",
             "templ",
             "toml",
+            "odin",
             "vimdoc",
             "yaml",
         },
