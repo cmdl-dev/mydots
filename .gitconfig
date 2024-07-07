@@ -1,6 +1,7 @@
 [user]
-	name = Scott McKendry
-	email = 39483124+scottmckendry@users.noreply.github.com
+    email = 11858501+cmdl-dev@users.noreply.github.com
+	name = Cesar Hernandez
+    username = cmdl-dev
 
 [core]
   editor = nvim
